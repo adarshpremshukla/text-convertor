@@ -1,0 +1,20 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-container .btn {
+    flex: none;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-wrap: wrap;
+    }
+
+    .button-container .btn {
+        flex: 1 1 calc(50% - 10px);
+        /* Each button takes 50% width minus the gap */
+    }
+}
